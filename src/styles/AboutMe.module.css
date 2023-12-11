@@ -1,0 +1,61 @@
+.inner-content {
+  gap: 50px;
+}
+
+.technology-message {
+  color: #ddb892;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.languages-ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.programing-languages h4 {
+  font-size: 15px;
+}
+
+.frameworks-tools h4 {
+  font-size: 15px;
+}
+
+.profile-image {
+  filter: drop-shadow(0 0 1rem #ddb892);
+}
+
+/* Screen width 991px max */
+@media screen and (max-width: 991px) {
+  .inner-content {
+    gap: 0px !important;
+  }
+
+  .profile {
+    flex: none;
+    width: 100%;
+    margin: 50px auto 0px;
+  }
+
+  .profile img {
+    max-width: 300px;
+    max-height: 300px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Screen width 300px max */
+@media screen and (max-width: 375px) {
+  .inner-content {
+    padding: 0px 12px;
+  }
+}
