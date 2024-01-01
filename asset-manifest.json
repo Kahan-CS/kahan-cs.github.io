@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a50d1e34.css",
-    "main.js": "/static/js/main.346cce36.js",
-    "static/media/resume.pdf": "/static/media/resume.9d0b25cd36bed851765a.pdf",
+    "main.js": "/static/js/main.6a3bee9d.js",
+    "static/media/resume.pdf": "/static/media/resume.e2fb9366a4c44d7680ee.pdf",
     "index.html": "/index.html",
     "static/media/instagram.svg": "/static/media/instagram.bb42fb1a5e336fe8669acb638fa68088.svg",
     "static/media/github.svg": "/static/media/github.5f5f55995387b7d8689484e37a687d1f.svg",
@@ -10,10 +10,10 @@
     "static/media/letter-k-svgrepo-com.svg": "/static/media/letter-k-svgrepo-com.aca4e63166a639a166cd754c8910072a.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.35e825d0be9371fea9e555f8e3d7af86.svg",
     "main.a50d1e34.css.map": "/static/css/main.a50d1e34.css.map",
-    "main.346cce36.js.map": "/static/js/main.346cce36.js.map"
+    "main.6a3bee9d.js.map": "/static/js/main.6a3bee9d.js.map"
   },
   "entrypoints": [
     "static/css/main.a50d1e34.css",
-    "static/js/main.346cce36.js"
+    "static/js/main.6a3bee9d.js"
   ]
 }
