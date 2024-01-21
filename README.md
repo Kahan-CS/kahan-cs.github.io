@@ -1,4 +1,4 @@
-# kahan6826conestoga.github.io
+# kahan-cs.github.io
 # kahan's eportfolio website
 
 # This branch's code was taken from Javier Arango: https://github.com/javier-arango/e-portfolio 
