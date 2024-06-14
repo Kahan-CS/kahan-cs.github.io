@@ -9,7 +9,7 @@ const socialMediaData = [
     icon: Linkedin,
     link: "http://linkedin.com/in/kahandesai",
   },
-  { id: uuidv4(), icon: Github, link: "https://github.com/kahan6826conestoga" },
+  { id: uuidv4(), icon: Github, link: "https://github.com/kahan-cs" },
   { id: uuidv4(), icon: Instagram, link: "https://instagram.com/kahanesque" },
 ];
 
