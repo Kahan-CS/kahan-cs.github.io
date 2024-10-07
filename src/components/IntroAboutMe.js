@@ -33,7 +33,7 @@ const IntroAboutMe = () => {
           {/* Big fact */}
           <div className="col">
             <p className={styles["big-fact"]}>
-              I am an undergraduate student in Computer Science (2nd Year). Seeking CO-OP for April 2024 term.
+              I am an undergraduate student in Computer Science (Waterloo, ON). Seeking CO-OP for May 2025 (4/8 Months).
             </p>
           </div>
         </div>

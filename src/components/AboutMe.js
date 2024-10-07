@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/AboutMe.module.css";
-import profileImg from "../assets/logo.svg";
+import profileImg from "../assets/profile-image.svg";
 import TechnologyList from "./technology-list/TechnologyList";
 import programingLanguages from "../data/programingLanguagesData";
 
@@ -12,8 +12,8 @@ const AboutMe = () => {
           <div className="col">
             <p>
               Hello there! My name is Kahan Desai.
-              I am studying 2nd year of Bachelor of Computer Science <br/>
-              Seeking Co-op for Spring '24 | Full-Stack, Back-end, Software Developer, Data Scientist
+              I am studying Bachelor of Computer Science <br/>
+              Seeking Co-op for Spring '25 for 4/8 Months | Full-Stack, Back-end, Software Developer, Data Scientist/ML Engineer
             </p>
             <p>
             Coming into Bachelor's of Computer Science, I had hardly any knowledge about programming and technology. All I had was my knowledge from my studies in Math, Physics, and Chemistry, and experience dealing with problem-solving and logical-reasoning through competitive exams. And most importantly, a curious mind! Ever since, I have learnt a lot through the courses, about programming, concepts, algorithms and a lot more understanding about computer science and IT. I have figured I could translate my logical skills and concepts into useful software systems/programs, which has become my essential driving force.
