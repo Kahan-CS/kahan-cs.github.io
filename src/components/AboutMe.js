@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/AboutMe.module.css";
-import profileImg from "../assets/profile-image.svg";
+import profileImg from "../assets/Profile-pic.jpg";
 import TechnologyList from "./technology-list/TechnologyList";
 import programingLanguages from "../data/programingLanguagesData";
 
