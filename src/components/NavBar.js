@@ -3,6 +3,7 @@ import NavBarLink from "./nav-bar-link/NavBarLink";
 import Logo from "../assets/logo.svg";
 import resume from "../assets/resume.pdf";
 import styles from "../styles/NavBar.module.css";
+import transcript from "../assets/transcript.pdf";
 
 const NavBar = () => {
   return (
@@ -39,6 +40,12 @@ const NavBar = () => {
             <NavBarLink name="Projects" link="#projects" button="no" />
             <NavBarLink name="Contact" link="#contact-me" button="no" />
             {/* Right Side | Resume */}
+            <NavBarLink
+              name="Transcript"
+              link={transcript}
+              button="yes"
+              target="_blank"
+            />
             <NavBarLink
               name="Resume"
               link={resume}
