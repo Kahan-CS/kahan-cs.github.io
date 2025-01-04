@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.a50d1e34.css",
-    "main.js": "/static/js/main.f48a2ece.js",
+    "main.css": "/static/css/main.3247f122.css",
+    "main.js": "/static/js/main.fdd3d61c.js",
     "static/media/Profile-pic.jpg": "/static/media/Profile-pic.d6185d04e6dc7d43e28e.jpg",
-    "static/media/resume.pdf": "/static/media/resume.66bd1bc5858f905db86c.pdf",
-    "static/media/transcript.pdf": "/static/media/transcript.2919937e10cd0688f18d.pdf",
+    "static/media/resume.pdf": "/static/media/resume.b91d592e6e7ccdc6282b.pdf",
+    "static/media/transcript.pdf": "/static/media/transcript.1ab2ac5e74700ab69256.pdf",
+    "static/media/bitsandpeas-web.png": "/static/media/bitsandpeas-web.85fc12421703568788b7.png",
     "static/media/roadquest.png": "/static/media/roadquest.29832bff5366061fb7c9.png",
     "static/media/conestogaconnects.png": "/static/media/conestogaconnects.aff3e6f8b9b583041c0c.png",
     "static/media/lazyPrint.png": "/static/media/lazyPrint.a0aa20bdbb2b738353e8.png",
@@ -15,11 +16,11 @@
     "static/media/instagram.svg": "/static/media/instagram.bb42fb1a5e336fe8669acb638fa68088.svg",
     "static/media/github.svg": "/static/media/github.5f5f55995387b7d8689484e37a687d1f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.35e825d0be9371fea9e555f8e3d7af86.svg",
-    "main.a50d1e34.css.map": "/static/css/main.a50d1e34.css.map",
-    "main.f48a2ece.js.map": "/static/js/main.f48a2ece.js.map"
+    "main.3247f122.css.map": "/static/css/main.3247f122.css.map",
+    "main.fdd3d61c.js.map": "/static/js/main.fdd3d61c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a50d1e34.css",
-    "static/js/main.f48a2ece.js"
+    "static/css/main.3247f122.css",
+    "static/js/main.fdd3d61c.js"
   ]
 }
