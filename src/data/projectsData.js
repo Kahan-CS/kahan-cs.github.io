@@ -4,6 +4,19 @@ import placeholderImage from "../assets/projects-img/placeholder.webp"; // Place
 const projectsData = [
   {
     id: uuidv4(),
+    name: "Bits and Peas Website",
+    image: require("../assets/projects-img/bitsandpeas-web.png"), 
+    description: `Designed and developed a responsive website for my chess academy, Bits and Peas, using Next.js, React, and Tailwind CSS, with a scalable backend in Flask (Python) and MySQL, deployed on Vercel's serverless architecture. This was my first Solo Project release`,
+    technology: [
+      { id: uuidv4(), name: "NextJS + React" },
+      { id: uuidv4(), name: "Tailwind CSS" },
+      { id: uuidv4(), name: "Flask (Python)" },
+      { id: uuidv4(), name: "MySQL" },
+    ],
+    link: "https://bitsandpeas.com",
+  },
+  {
+    id: uuidv4(),
     name: "Conestoga Connects",
     image: require("../assets/projects-img/conestogaconnects.png"), 
     description: `Developed a peer networking platform with separate client and admin portals using C# and Blazor WebAssembly, integrated with MongoDB for database management and ASP.NET Core for user authentication.`,
