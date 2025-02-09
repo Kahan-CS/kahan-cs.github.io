@@ -1,7 +1,6 @@
 import React from "react";
 import NavBarLink from "./nav-bar-link/NavBarLink";
 import Logo from "../assets/logo.svg";
-import resume from "../assets/resume.pdf";
 import styles from "../styles/NavBar.module.css";
 import transcript from "../assets/transcript.pdf";
 
@@ -48,7 +47,7 @@ const NavBar = () => {
             />
             <NavBarLink
               name="Resume"
-              link={resume}
+              link={"https://tinyurl.com/kahan-resume"}
               button="yes"
               target="_blank"
             />
