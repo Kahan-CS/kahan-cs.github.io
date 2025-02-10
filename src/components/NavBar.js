@@ -47,7 +47,7 @@ const NavBar = () => {
             />
             <NavBarLink
               name="Resume"
-              link={"https://tinyurl.com/kahan-resume"}
+              link={"https://drive.google.com/file/d/1tOEBpCOGOJFOuNNH4YHh2UnLahJYxYNX/view?usp=sharing"}
               button="yes"
               target="_blank"
             />
