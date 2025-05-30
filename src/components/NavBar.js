@@ -4,17 +4,22 @@ import Logo from "../assets/logo.svg";
 import styles from "../styles/NavBar.module.css";
 import transcript from "../assets/transcript.pdf";
 
-const NavBar = () => {
+const NavBar = ({ zIndex = 4 }) => {
   return (
     <>
       {/* Nav Bar */}
       <nav
         className={`navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom ${styles["navbar"]} ${styles["navbar-dark"]}`}
+        style={{ zIndex }}
       >
         {/* Left Side Logo */}
-        <a className="navbar-brand" href="#">
+        <button
+          className="navbar-brand"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          style={{ background: "none", border: "none", padding: 0 }}
+        >
           <img src={Logo} width="100px" alt="Kahan Desai logo" />
-        </a>
+        </button>
 
         {/* Button when menu is collapsed */}
         <button
