@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBarLink from "./nav-bar-link/NavBarLink";
 import Logo from "../assets/logo.svg";
 import styles from "../styles/NavBar.module.css";
 import transcript from "../assets/transcript.pdf";
 
 const NavBar = ({ zIndex = 4 }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
+
   return (
     <>
       {/* Nav Bar */}
@@ -42,6 +45,57 @@ const NavBar = ({ zIndex = 4 }) => {
           <ul className="navbar-nav text-center ms-auto">
             <NavBarLink name="About Me" link="#about-me" button="no" />
             <NavBarLink name="Projects" link="#projects" button="no" />
+            <li
+              className="nav-item dropdown"
+              onMouseEnter={() => {
+                setIsDropdownOpen(true);
+                setIsHovering(true);
+              }}
+              onMouseLeave={() => {
+                setIsDropdownOpen(false);
+                setIsHovering(false);
+              }}
+            >
+              <a
+                className={`nav-link link ${styles["nav-link-custom"]} dropdown-toggle`}
+                href="#"
+                id="projectsDropdown"
+                role="button"
+                style={{
+                  cursor: "pointer",
+                  animation: isHovering ? "none" : "bounce 2s infinite",
+                }}
+              >
+                Showcase
+              </a>
+              {/* Combined both items into a single dropdown menu */}
+              <div
+                className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
+                aria-labelledby="projectsDropdown"
+                style={{
+                  backgroundColor: "#343a40",
+                }}
+              >
+                <a
+                  href="#/taboo-game"
+                  className="dropdown-item"
+                  style={{
+                    color: "white",
+                  }}
+                >
+                  Taboo Game
+                </a>
+                <a
+                  href="#/fw-visual"
+                  className="dropdown-item"
+                  style={{
+                    color: "white",
+                  }}
+                >
+                  Floyd-Warshall
+                </a>
+              </div>
+            </li>
             <NavBarLink name="Contact" link="#contact-me" button="no" />
             {/* Right Side | Resume */}
             <NavBarLink
@@ -52,7 +106,9 @@ const NavBar = ({ zIndex = 4 }) => {
             />
             <NavBarLink
               name="Resume"
-              link={"https://drive.google.com/file/d/17o23vqe8EtQx956xSeezk_TNCbYWVZJj/view?usp=sharing"}
+              link={
+                "https://drive.google.com/file/d/17o23vqe8EtQx956xSeezk_TNCbYWVZJj/view?usp=sharing"
+              }
               button="yes"
               target="_blank"
             />

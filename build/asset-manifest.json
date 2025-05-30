@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3247f122.css",
-    "main.js": "/static/js/main.74cd662d.js",
+    "main.css": "/static/css/main.87648b98.css",
+    "main.js": "/static/js/main.f180bfbe.js",
     "static/media/Profile-pic.jpg": "/static/media/Profile-pic.d6185d04e6dc7d43e28e.jpg",
     "static/media/transcript.pdf": "/static/media/transcript.1ab2ac5e74700ab69256.pdf",
     "static/media/bitsandpeas-web.png": "/static/media/bitsandpeas-web.85fc12421703568788b7.png",
@@ -15,11 +15,11 @@
     "static/media/instagram.svg": "/static/media/instagram.bb42fb1a5e336fe8669acb638fa68088.svg",
     "static/media/github.svg": "/static/media/github.5f5f55995387b7d8689484e37a687d1f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.35e825d0be9371fea9e555f8e3d7af86.svg",
-    "main.3247f122.css.map": "/static/css/main.3247f122.css.map",
-    "main.74cd662d.js.map": "/static/js/main.74cd662d.js.map"
+    "main.87648b98.css.map": "/static/css/main.87648b98.css.map",
+    "main.f180bfbe.js.map": "/static/js/main.f180bfbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.3247f122.css",
-    "static/js/main.74cd662d.js"
+    "static/css/main.87648b98.css",
+    "static/js/main.f180bfbe.js"
   ]
 }

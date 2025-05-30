@@ -37,6 +37,32 @@ const TabooGame = () => (
   </div>
 );
 
+
+const FloydWarshallVisualiser = () => (
+  <div
+    style={{
+      position: "fixed", // Ensures it covers the entire viewport
+      top: 0,
+      left: 0,
+      height: "100vh", // Full viewport height
+      width: "100vw", // Full viewport width
+      zIndex: 1000, // Higher than the NavBar's z-index
+    }}
+  >
+    <iframe
+      src="https://gregarious-brioche-614a08.netlify.app/"
+      title="Floyd Warshall Visualiser"
+      style={{
+        border: "none",
+        width: "100%",
+        height: "100%",
+      }}
+    />
+  </div>
+);
+
+
+
 function App() {
   return (
     <Router>
@@ -49,6 +75,15 @@ function App() {
             <>
               <NavBar zIndex={0} />
               <TabooGame />
+            </>
+          }
+        />
+        <Route
+          path="/fw-visual"
+          element={
+            <>
+              <NavBar zIndex={0} />
+              <FloydWarshallVisualiser />
             </>
           }
         />
