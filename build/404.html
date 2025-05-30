@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL='/'" />
     <script>
-      // Redirect to the root of the app and let React Router handle the route
-      window.location.href = "/";
+      // Redirect to index.html while preserving the original path
+      const redirectTo = window.location.pathname;
+      window.location.href = "/" + "#" + redirectTo;
     </script>
   </head>
   <body></body>

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom"; // Use HashRouter
 import "./styles/GlobalStyles.css";
 import socialMediaData from "./data/socialMediaData";
 
