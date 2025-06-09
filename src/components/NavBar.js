@@ -107,7 +107,7 @@ const NavBar = ({ zIndex = 4 }) => {
             <NavBarLink
               name="Resume"
               link={
-                "https://drive.google.com/file/d/17o23vqe8EtQx956xSeezk_TNCbYWVZJj/view?usp=sharing"
+                "https://drive.google.com/file/d/1tAzIWzmdcmUm1y7ESBGBtjT6WyW-hmyS/view?usp=sharing"
               }
               button="yes"
               target="_blank"
