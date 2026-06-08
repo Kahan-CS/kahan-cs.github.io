@@ -1,0 +1,225 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background-color: #0a2236;
+  border: 1px solid rgba(221, 184, 146, 0.15);
+  border-radius: 8px;
+  padding: 28px 32px;
+  transition: border-color 0.25s ease, transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  border-color: rgba(221, 184, 146, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px -8px rgba(221, 184, 146, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.jobTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f7ede2;
+  margin: 0;
+}
+
+.typeBadge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.badgeCoop {
+  background-color: rgba(94, 190, 145, 0.15);
+  color: #5ebe91;
+  border: 1px solid rgba(94, 190, 145, 0.35);
+}
+
+.badgeContract {
+  background-color: rgba(100, 160, 230, 0.15);
+  color: #64a0e6;
+  border: 1px solid rgba(100, 160, 230, 0.35);
+}
+
+.badgePartTime {
+  background-color: rgba(221, 184, 146, 0.15);
+  color: #ddb892;
+  border: 1px solid rgba(221, 184, 146, 0.35);
+}
+
+.badgeVolunteer {
+  background-color: rgba(180, 120, 220, 0.15);
+  color: #b478dc;
+  border: 1px solid rgba(180, 120, 220, 0.35);
+}
+
+.dateRange {
+  font-size: 13px;
+  color: #8899a6;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.companyRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.companyName {
+  font-size: 15px;
+  color: #ddb892;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.companyName:hover {
+  color: #f7ede2;
+}
+
+.locationDot {
+  color: #445566;
+  font-size: 13px;
+}
+
+.location {
+  font-size: 13px;
+  color: #667788;
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bullet {
+  display: flex;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #c8d6e0;
+}
+
+.bulletArrow {
+  color: #ddb892;
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.extraBullets {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.extraBulletsOpen {
+  max-height: 400px;
+  opacity: 1;
+  margin-top: 8px;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillTag {
+  font-size: 12px;
+  color: #ddb892;
+  background-color: rgba(221, 184, 146, 0.08);
+  border: 1px solid rgba(221, 184, 146, 0.2);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-family: "SF Mono", "Fira Code", monospace;
+}
+
+.knowMoreBtn {
+  background: none;
+  border: none;
+  color: #ddb892;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 0;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.knowMoreBtn:hover {
+  color: #f7ede2;
+}
+
+.chevron {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 11px;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Screen width 768px max */
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 20px 18px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .dateRange {
+    padding-top: 0;
+  }
+
+  .jobTitle {
+    font-size: 17px;
+  }
+}

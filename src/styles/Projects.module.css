@@ -1,14 +1,96 @@
-/* Screen width 991px max */
-@media screen and (max-width: 991px) {
-  .project-container {
-    max-width: 970px;
-    margin: 0px 20px 0px 20px;
+.container {
+  max-width: 1100px;
+}
+
+/* Featured: 3-column grid */
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* More section */
+.moreSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.moreToggle {
+  background: none;
+  border: 1px solid rgba(221, 184, 146, 0.4);
+  color: #ddb892;
+  font-size: 14px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.moreToggle:hover {
+  background: rgba(221, 184, 146, 0.08);
+  border-color: rgba(221, 184, 146, 0.7);
+  color: #f7ede2;
+}
+
+.toggleChevron {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 11px;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* More grid: hidden by default, animate open */
+.moreGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+}
+
+.moreGridOpen {
+  max-height: 2000px;
+  opacity: 1;
+}
+
+/* Screen width 1100px max */
+@media screen and (max-width: 1100px) {
+  .featuredGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .moreGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* Screen width 768px max */
 @media screen and (max-width: 768px) {
-  .project-container {
-    margin: 0px;
+  .featuredGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .moreGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen width 500px max */
+@media screen and (max-width: 500px) {
+  .moreGrid {
+    grid-template-columns: 1fr;
   }
 }

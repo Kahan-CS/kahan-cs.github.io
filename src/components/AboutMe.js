@@ -1,29 +1,31 @@
 import React from "react";
 import styles from "../styles/AboutMe.module.css";
-import profileImg from "../assets/logo.svg";
+import profileImgFallback from "../assets/Profile-pic.jpg";
 import TechnologyList from "./technology-list/TechnologyList";
 import programingLanguages from "../data/programingLanguagesData";
+import usePortfolioConfig from "../hooks/usePortfolioConfig";
 
 const AboutMe = () => {
+  const config = usePortfolioConfig();
+  const profileImg = config.profilePicUrl || profileImgFallback;
+
   return (
     <div id="about-me" className="sections container">
         <h2 className="section-heading">About Me</h2>
         <div className={`row ${styles["inner-content"]}`}>
           <div className="col">
             <p>
-              Hello there! My name is Kahan Desai.
-              I am studying 2nd year of Bachelor of Computer Science <br/>
-              Seeking Co-op for Spring '24 | Full-Stack, Back-end, Software Developer, Data Scientist
+              Hello there! My name is Kahan Desai — a Computer Science (Honours) graduate from Conestoga College, Waterloo ON.
+              Full-Stack Developer | Back-end Engineer | Data Scientist / ML Engineer
             </p>
             <p>
-            Coming into Bachelor's of Computer Science, I had hardly any knowledge about programming and technology. All I had was my knowledge from my studies in Math, Physics, and Chemistry, and experience dealing with problem-solving and logical-reasoning through competitive exams. And most importantly, a curious mind! Ever since, I have learnt a lot through the courses, about programming, concepts, algorithms and a lot more understanding about computer science and IT. I have figured I could translate my logical skills and concepts into useful software systems/programs, which has become my essential driving force.
+              Coming into my Bachelor's I had hardly any programming background — just strong foundations in Math, Physics, and Chemistry, and years of competitive problem-solving. That curious mind led me to translate logical skills into real software: from embedded C systems at Blackberry QNX, to full-stack web apps, to machine learning pipelines. I care about building things that actually work well, and I enjoy the challenge of making complex systems simple and reliable.
             </p>
             <p className={styles["technology-message"]}>
-              Recent technologies I've been working with include:
+              Recent technologies I've been working with:
             </p>
 
             <div className={`row ${styles["programing-languages"]}`}>
-              {/* Technologies learned and Used */}
               <div className="col-sm">
                 <ul className={styles["languages-ul"]}>
                   {programingLanguages.map((techName) => (
