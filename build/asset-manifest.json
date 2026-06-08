@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8114ee42.css",
-    "main.js": "/static/js/main.5dd60f69.js",
+    "main.css": "/static/css/main.e50316f2.css",
+    "main.js": "/static/js/main.c84d04e3.js",
     "static/media/transcript.pdf": "/static/media/transcript.26ca2a13c8f06e65727a.pdf",
     "static/media/bitsandpeas-web.png": "/static/media/bitsandpeas-web.85fc12421703568788b7.png",
     "static/media/roadquest.png": "/static/media/roadquest.29832bff5366061fb7c9.png",
@@ -15,11 +15,11 @@
     "static/media/instagram.svg": "/static/media/instagram.bb42fb1a5e336fe8669acb638fa68088.svg",
     "static/media/github.svg": "/static/media/github.5f5f55995387b7d8689484e37a687d1f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.35e825d0be9371fea9e555f8e3d7af86.svg",
-    "main.8114ee42.css.map": "/static/css/main.8114ee42.css.map",
-    "main.5dd60f69.js.map": "/static/js/main.5dd60f69.js.map"
+    "main.e50316f2.css.map": "/static/css/main.e50316f2.css.map",
+    "main.c84d04e3.js.map": "/static/js/main.c84d04e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8114ee42.css",
-    "static/js/main.5dd60f69.js"
+    "static/css/main.e50316f2.css",
+    "static/js/main.c84d04e3.js"
   ]
 }

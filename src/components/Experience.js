@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/Experience.module.css";
-import experienceData from "../data/experienceData";
+import useContent from "../hooks/useContent";
 
 const TYPE_BADGE = {
   "CO-OP": styles.badgeCoop,
@@ -78,11 +78,12 @@ const ExperienceCard = ({ exp }) => {
 };
 
 const Experience = () => {
+  const { experience } = useContent();
   return (
     <div id="experience" className="sections container">
       <h2 className="section-heading">Experience</h2>
       <div className={styles.timeline}>
-        {experienceData.map((exp) => (
+        {experience.map((exp) => (
           <ExperienceCard key={exp.id} exp={exp} />
         ))}
       </div>

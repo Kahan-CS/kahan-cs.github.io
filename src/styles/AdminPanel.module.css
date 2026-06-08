@@ -236,8 +236,251 @@
   color: #64a0e6;
 }
 
+/* Wide panel for edit screen */
+.panelWide {
+  max-width: 760px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid rgba(221, 184, 146, 0.15);
+  margin-bottom: 24px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #667788;
+  font-size: 14px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-bottom: -1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tab:hover {
+  color: #ddb892;
+}
+
+.tabActive {
+  color: #ddb892;
+  border-bottom-color: #ddb892;
+}
+
+.tabContent {
+  min-height: 200px;
+}
+
+/* Shared form layout */
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.textarea {
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.checkLabel {
+  font-size: 14px;
+  color: #c8d6e0;
+  cursor: pointer;
+}
+
+/* List items (projects / experience) */
+.listItem {
+  border: 1px solid rgba(221, 184, 146, 0.1);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.listItemRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.listItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.listItemName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f7ede2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listItemMeta {
+  font-size: 12px;
+  color: #556677;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listItemActions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.moveBtn {
+  background: none;
+  border: 1px solid rgba(221, 184, 146, 0.2);
+  border-radius: 4px;
+  color: #667788;
+  font-size: 13px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.moveBtn:hover:not(:disabled) {
+  color: #ddb892;
+  border-color: rgba(221, 184, 146, 0.5);
+}
+
+.moveBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.editBtn {
+  background: rgba(221, 184, 146, 0.08);
+  border: 1px solid rgba(221, 184, 146, 0.25);
+  border-radius: 4px;
+  color: #ddb892;
+  font-size: 12px;
+  padding: 0 10px;
+  height: 28px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.editBtn:hover {
+  background: rgba(221, 184, 146, 0.16);
+}
+
+.deleteBtn {
+  background: none;
+  border: 1px solid rgba(230, 57, 70, 0.2);
+  border-radius: 4px;
+  color: #e63946;
+  font-size: 12px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.deleteBtn:hover {
+  background: rgba(230, 57, 70, 0.1);
+}
+
+/* Inline editor */
+.editorBox {
+  padding: 16px;
+  background: rgba(0, 18, 25, 0.4);
+  border-top: 1px solid rgba(221, 184, 146, 0.1);
+}
+
+.editorActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.saveSmallBtn {
+  background: rgba(94, 190, 145, 0.12);
+  border: 1px solid rgba(94, 190, 145, 0.35);
+  border-radius: 5px;
+  color: #5ebe91;
+  font-size: 13px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.saveSmallBtn:hover {
+  background: rgba(94, 190, 145, 0.22);
+}
+
+.cancelSmallBtn {
+  background: none;
+  border: 1px solid rgba(102, 119, 136, 0.3);
+  border-radius: 5px;
+  color: #667788;
+  font-size: 13px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cancelSmallBtn:hover {
+  background: rgba(102, 119, 136, 0.1);
+}
+
+/* Add button */
+.addBtn {
+  background: none;
+  border: 1px dashed rgba(221, 184, 146, 0.3);
+  border-radius: 6px;
+  color: #ddb892;
+  font-size: 13px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.addBtn:hover {
+  background: rgba(221, 184, 146, 0.06);
+  border-color: rgba(221, 184, 146, 0.5);
+}
+
+/* Publish bar */
+.publishBar {
+  margin-top: 28px;
+  border-top: 1px solid rgba(221, 184, 146, 0.1);
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .panel {
     padding: 28px 22px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .listItemRow {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
