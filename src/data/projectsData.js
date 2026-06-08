@@ -1,12 +1,29 @@
 import { v4 as uuidv4 } from "uuid";
-import placeholderImage from "../assets/projects-img/placeholder.webp"; // Placeholder image
+import placeholderImage from "../assets/projects-img/placeholder.webp";
 
 const projectsData = [
   {
     id: uuidv4(),
+    name: "Student Holistic Performance Classifier",
+    image: placeholderImage,
+    description:
+      "Cleaned and reduced a 4,424-record higher-education dataset from 35 to 21 features using collinearity pruning and custom ordinal encoding. Reframed binary dropout classification into 3 holistic risk classes. Tuned Random Forest, ANN, and KNN via MLflow — best model: 84.3% accuracy & 0.85 macro-F1.",
+    technology: [
+      { id: uuidv4(), name: "scikit-learn" },
+      { id: uuidv4(), name: "Flask" },
+      { id: uuidv4(), name: "MLflow" },
+      { id: uuidv4(), name: "Python" },
+    ],
+    link: "",
+    demoLink: "https://student-risk-predictor-inuu.onrender.com/",
+    featured: true,
+  },
+  {
+    id: uuidv4(),
     name: "Bits and Peas Website",
-    image: require("../assets/projects-img/bitsandpeas-web.png"), 
-    description: `Designed and developed a responsive website for my chess academy, Bits and Peas, using Next.js, React, and Tailwind CSS, with a scalable backend in Flask (Python) and MySQL, deployed on Vercel's serverless architecture. This was my first Solo Project release`,
+    image: require("../assets/projects-img/bitsandpeas-web.png"),
+    description:
+      "Designed and developed a responsive website for my chess academy using Next.js, React, and Tailwind CSS, with a scalable backend in Flask and MySQL, deployed on Vercel's serverless architecture. My first solo project release.",
     technology: [
       { id: uuidv4(), name: "NextJS + React" },
       { id: uuidv4(), name: "Tailwind CSS" },
@@ -14,12 +31,31 @@ const projectsData = [
       { id: uuidv4(), name: "MySQL" },
     ],
     link: "https://bitsandpeas.com",
+    demoLink: "https://bitsandpeas.com",
+    featured: true,
+  },
+  {
+    id: uuidv4(),
+    name: "Taboo Card Game",
+    image: placeholderImage,
+    description:
+      "Built a Python-based Taboo card generator using a local LLM (DeepSeek-Qwen via llama_cpp) to dynamically produce structured card datasets. Expanded word pools via NLP techniques (NLTK's Brown corpus, WordNet) and external APIs. Cards feed into a dynamic React web app.",
+    technology: [
+      { id: uuidv4(), name: "Python" },
+      { id: uuidv4(), name: "llama_cpp" },
+      { id: uuidv4(), name: "NLTK" },
+      { id: uuidv4(), name: "React" },
+    ],
+    link: "",
+    demoLink: "https://luxury-crumble-ed3793.netlify.app/",
+    featured: true,
   },
   {
     id: uuidv4(),
     name: "Conestoga Connects",
-    image: require("../assets/projects-img/conestogaconnects.png"), 
-    description: `Developed a peer networking platform with separate client and admin portals using C# and Blazor WebAssembly, integrated with MongoDB for database management and ASP.NET Core for user authentication.`,
+    image: require("../assets/projects-img/conestogaconnects.png"),
+    description:
+      "Peer networking platform with separate client and admin portals built in C# and Blazor WebAssembly, integrated with MongoDB and ASP.NET Core. Achieved 97%+ code coverage using BUnit, NUnit, MSTest, JMeter, and Selenium WebDriver.",
     technology: [
       { id: uuidv4(), name: "C#" },
       { id: uuidv4(), name: "Blazor WebAssembly" },
@@ -27,26 +63,47 @@ const projectsData = [
       { id: uuidv4(), name: "ASP.NET Core" },
     ],
     link: "https://github.com/Kahan-CS/Conestoga_Connects-Project_IV-Group-7",
+    demoLink: "",
+    featured: false,
+  },
+  {
+    id: uuidv4(),
+    name: "Café Management App",
+    image: placeholderImage,
+    description:
+      "Café booking application using a .NET Web API back end and two ASP.NET Core MVC front-end clients. Leveraged Entity Framework Core, ASP.NET Identity, and MS SQL Server with JWT tokens for secure, stateless authentication across all API endpoints.",
+    technology: [
+      { id: uuidv4(), name: ".NET Web API" },
+      { id: uuidv4(), name: "ASP.NET MVC" },
+      { id: uuidv4(), name: "EF Core" },
+      { id: uuidv4(), name: "MS SQL Server" },
+    ],
+    link: "",
+    demoLink: "",
+    featured: false,
   },
   {
     id: uuidv4(),
     name: "RoadQuest",
-    image: require("../assets/projects-img/roadquest.png"), 
-    description: `Developed the back end using Express-NodeJS for navigation features and real-time monitoring of smartphone sensors for driving skills assessment. Built REST APIs with Mongoose and MongoDB Atlas, and implemented Android-native mobile UI in Kotlin.`,
+    image: require("../assets/projects-img/roadquest.png"),
+    description:
+      "Express-NodeJS back end for real-time monitoring of smartphone sensors for driving skills assessment. REST APIs with Mongoose and MongoDB Atlas, Android-native UI in Kotlin reading accelerometer and gyroscopic data for precise skills reports.",
     technology: [
       { id: uuidv4(), name: "Node.js" },
       { id: uuidv4(), name: "Express.js" },
       { id: uuidv4(), name: "MongoDB Atlas" },
       { id: uuidv4(), name: "Kotlin" },
-      { id: uuidv4(), name: "Azure DevOps" },
     ],
     link: "https://github.com/Kahan-CS/RoadQuest-Group-18",
+    demoLink: "",
+    featured: false,
   },
   {
     id: uuidv4(),
     name: "LazyPrint",
-    image: require("../assets/projects-img/lazyPrint.png"), 
-    description: `Designed a dynamic job scheduling system using Python and Flask, incorporating advanced filtering algorithms and tested using ReactJS for front-end, Pandas for data analysis, and Flask for REST APIs.`,
+    image: require("../assets/projects-img/lazyPrint.png"),
+    description:
+      "Dynamic job scheduling system with advanced filter-based sorting algorithms, improving feature usability by 35%. Built with Python, Flask REST APIs, Pandas for scheduling analysis, and a ReactJS front end.",
     technology: [
       { id: uuidv4(), name: "Python" },
       { id: uuidv4(), name: "Flask" },
@@ -54,39 +111,22 @@ const projectsData = [
       { id: uuidv4(), name: "React.js" },
     ],
     link: "https://github.com/Kahan-CS/CSCN72030-Group_2-LazyPrint",
+    demoLink: "",
+    featured: false,
   },
   {
-  id: uuidv4(),
+    id: uuidv4(),
     name: "Savior In Darkness",
-    image: require("../assets/projects-img/saviorindarkness.png"), 
-    description: `Developed an interactive, console-based strategy game using C, featuring varied difficulty levels. Applied foundational programming principles such as dynamic memory allocation, data structures, recursion, and file handling. Conducted unit and integration testing with MS Testing Framework.`,
+    image: require("../assets/projects-img/saviorindarkness.png"),
+    description:
+      "Interactive console-based demon-hero strategy game written entirely in C. Applies dynamic memory allocation, recursion, data structures, and file handling. Achieved 15% memory usage reduction. Full unit and integration testing via MS Testing Framework.",
     technology: [
       { id: uuidv4(), name: "C" },
       { id: uuidv4(), name: "MS Testing Framework" },
     ],
     link: "https://github.com/Kahan-CS/Savior_in_darkness",
-  },
-  {
-    id: uuidv4(),
-    name: "Study-Incentivizer",
-    image: placeholderImage, 
-    description: `Built a gamified self-study application during an 8-hour hackathon using ReactJS for frontend and Python for backend, featuring face and screen-content tracking for study validation.`,
-    technology: [
-      { id: uuidv4(), name: "React.js" },
-      { id: uuidv4(), name: "Python" },
-    ],
-    link: "https://devpost.com/software/study-incentive",
-  },
-  {
-    id: uuidv4(),
-    name: "Phone Orientation Predictor",
-    image: placeholderImage, 
-    description: `Developed a phone orientation predictor using machine learning algorithms in C++, processing sensor data from accelerometers to predict phone position.`,
-    technology: [
-      { id: uuidv4(), name: "C++" },
-      { id: uuidv4(), name: "GDB" },
-    ],
-    link: "https://github.com/Kahan-CS/FinalProject-OOP-W23",
+    demoLink: "",
+    featured: false,
   },
 ];
 
