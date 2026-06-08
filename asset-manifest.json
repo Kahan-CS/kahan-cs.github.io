@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.8114ee42.css",
-    "main.js": "/static/js/main.f1e3ac51.js",
-    "static/media/Profile-pic.jpg": "/static/media/Profile-pic.d6185d04e6dc7d43e28e.jpg",
+    "main.js": "/static/js/main.5dd60f69.js",
     "static/media/transcript.pdf": "/static/media/transcript.26ca2a13c8f06e65727a.pdf",
     "static/media/bitsandpeas-web.png": "/static/media/bitsandpeas-web.85fc12421703568788b7.png",
     "static/media/roadquest.png": "/static/media/roadquest.29832bff5366061fb7c9.png",
     "static/media/conestogaconnects.png": "/static/media/conestogaconnects.aff3e6f8b9b583041c0c.png",
     "static/media/lazyPrint.png": "/static/media/lazyPrint.a0aa20bdbb2b738353e8.png",
+    "static/media/Profile-pic.jpg": "/static/media/Profile-pic.3eeb353cc02d99e08a04.jpg",
     "static/media/saviorindarkness.png": "/static/media/saviorindarkness.d14d8fd92b5e81fb6472.png",
     "static/media/logo.svg": "/static/media/logo.c42f86ca2ee22773b1686e30b73320ab.svg",
     "static/media/placeholder.webp": "/static/media/placeholder.aadba29c0fa8fe2da964.webp",
@@ -16,10 +16,10 @@
     "static/media/github.svg": "/static/media/github.5f5f55995387b7d8689484e37a687d1f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.35e825d0be9371fea9e555f8e3d7af86.svg",
     "main.8114ee42.css.map": "/static/css/main.8114ee42.css.map",
-    "main.f1e3ac51.js.map": "/static/js/main.f1e3ac51.js.map"
+    "main.5dd60f69.js.map": "/static/js/main.5dd60f69.js.map"
   },
   "entrypoints": [
     "static/css/main.8114ee42.css",
-    "static/js/main.f1e3ac51.js"
+    "static/js/main.5dd60f69.js"
   ]
 }
