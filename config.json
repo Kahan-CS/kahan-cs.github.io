@@ -1,5 +1,390 @@
 {
   "resumeUrl": "https://drive.google.com/file/d/1c_CHyGtiEtoyUexXqqr7ZXTY6iEefnk3/view?usp=sharing",
+  "statusLine": "Seeking entry-level software engineering positions",
   "profilePicUrl": "https://drive.google.com/file/d/1KX7SrQSADE7BLlVp0GGyuSnaVrp8JeOq/view?usp=sharing",
-  "statusLine": "Seeking entry-level software engineering positions"
+  "projects": [
+    {
+      "id": "b99cbf67-02ff-4a0d-a303-ec92dcc50766",
+      "name": "Student Holistic Performance Classifier",
+      "description": "Cleaned and reduced a 4,424-record higher-education dataset from 35 to 21 features using collinearity pruning and custom ordinal encoding. Reframed binary dropout classification into 3 holistic risk classes. Tuned Random Forest, ANN, and KNN via MLflow — best model: 84.3% accuracy & 0.85 macro-F1.",
+      "technology": [
+        {
+          "id": "420e9bba-bbcd-489e-bee4-ad6dbd17b79c",
+          "name": "scikit-learn"
+        },
+        {
+          "id": "2751b4b4-3d86-4ebc-8331-9a8750fc0d6b",
+          "name": "Flask"
+        },
+        {
+          "id": "a7dd3fef-589f-4b08-9274-f6d0ac0bf674",
+          "name": "MLflow"
+        },
+        {
+          "id": "699160fa-f189-4b54-bd3f-8db01cd7df38",
+          "name": "Python"
+        }
+      ],
+      "link": "",
+      "demoLink": "https://student-risk-predictor-inuu.onrender.com/",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": "51876ec1-daf6-48ef-bb54-dfa5ad7464ef",
+      "name": "Café Management App",
+      "description": "Café booking application using a .NET Web API back end and two ASP.NET Core MVC front-end clients. Leveraged Entity Framework Core, ASP.NET Identity, and MS SQL Server with JWT tokens for secure, stateless authentication across all API endpoints.",
+      "technology": [
+        {
+          "id": "51876ec1-daf6-48ef-bb54-dfa5ad7464ef-t0",
+          "name": ".NET Web API"
+        },
+        {
+          "id": "51876ec1-daf6-48ef-bb54-dfa5ad7464ef-t1",
+          "name": "ASP.NET MVC"
+        },
+        {
+          "id": "51876ec1-daf6-48ef-bb54-dfa5ad7464ef-t2",
+          "name": "EF Core"
+        },
+        {
+          "id": "51876ec1-daf6-48ef-bb54-dfa5ad7464ef-t3",
+          "name": "MS SQL Server"
+        }
+      ],
+      "link": "",
+      "demoLink": "",
+      "featured": true,
+      "techString": ".NET Web API, ASP.NET MVC, EF Core, MS SQL Server",
+      "image": ""
+    },
+    {
+      "id": "a8d3b166-5591-461b-9571-67dee30435f2",
+      "name": "Taboo Card Game",
+      "description": "Built a Python-based Taboo card generator using a local LLM (DeepSeek-Qwen via llama_cpp) to dynamically produce structured card datasets. Expanded word pools via NLP techniques (NLTK's Brown corpus, WordNet) and external APIs. Cards feed into a dynamic React web app.",
+      "technology": [
+        {
+          "id": "ba678624-e7a7-4d8c-89cf-dc95dfb38fa3",
+          "name": "Python"
+        },
+        {
+          "id": "46064127-2d05-4e2c-b1da-3365938465d7",
+          "name": "llama_cpp"
+        },
+        {
+          "id": "2731958d-5cff-42f5-8478-04fa195152d3",
+          "name": "NLTK"
+        },
+        {
+          "id": "7d17b96a-bedc-41c7-b878-517b76a4c923",
+          "name": "React"
+        }
+      ],
+      "link": "",
+      "demoLink": "https://luxury-crumble-ed3793.netlify.app/",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": "ed4290de-4c42-4f8d-b819-bfe7447a78ea",
+      "name": "Bits and Peas Website",
+      "description": "Designed and developed a responsive website for my chess academy using Next.js, React, and Tailwind CSS, with a scalable backend in Flask and MySQL, deployed on Vercel's serverless architecture. My first solo project release.",
+      "technology": [
+        {
+          "id": "ed4290de-4c42-4f8d-b819-bfe7447a78ea-t0",
+          "name": "NextJS + React"
+        },
+        {
+          "id": "ed4290de-4c42-4f8d-b819-bfe7447a78ea-t1",
+          "name": "Tailwind CSS"
+        },
+        {
+          "id": "ed4290de-4c42-4f8d-b819-bfe7447a78ea-t2",
+          "name": "Flask (Python)"
+        },
+        {
+          "id": "ed4290de-4c42-4f8d-b819-bfe7447a78ea-t3",
+          "name": "MySQL"
+        }
+      ],
+      "link": "https://bitsandpeas.com",
+      "demoLink": "https://bitsandpeas.com",
+      "featured": false,
+      "techString": "NextJS + React, Tailwind CSS, Flask (Python), MySQL",
+      "image": ""
+    },
+    {
+      "id": "22bbefe2-d8b3-495d-8806-13316b8aca89",
+      "name": "Conestoga Connects",
+      "description": "Peer networking platform with separate client and admin portals built in C# and Blazor WebAssembly, integrated with MongoDB and ASP.NET Core. Achieved 97%+ code coverage using BUnit, NUnit, MSTest, JMeter, and Selenium WebDriver.",
+      "technology": [
+        {
+          "id": "e398f9a5-fd93-4987-9204-1d89c883873b",
+          "name": "C#"
+        },
+        {
+          "id": "30863045-b741-4017-9137-fd3990952b9d",
+          "name": "Blazor WebAssembly"
+        },
+        {
+          "id": "266454c6-caa7-4064-95a5-9d77cd1eef73",
+          "name": "MongoDB"
+        },
+        {
+          "id": "ca443cea-348f-4134-83cd-404cd92ca0fb",
+          "name": "ASP.NET Core"
+        }
+      ],
+      "link": "https://github.com/Kahan-CS/Conestoga_Connects-Project_IV-Group-7",
+      "demoLink": "",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "a5df012b-1480-4a64-8b13-545dc3917aad",
+      "name": "RoadQuest",
+      "description": "Express-NodeJS back end for real-time monitoring of smartphone sensors for driving skills assessment. REST APIs with Mongoose and MongoDB Atlas, Android-native UI in Kotlin reading accelerometer and gyroscopic data for precise skills reports.",
+      "technology": [
+        {
+          "id": "15996496-e0f5-4a68-9901-482e2531fa3d",
+          "name": "Node.js"
+        },
+        {
+          "id": "c0b19247-87ce-4892-9b73-2899ffe9db6c",
+          "name": "Express.js"
+        },
+        {
+          "id": "8894d128-f896-41b6-a4ce-e7b00ad3a763",
+          "name": "MongoDB Atlas"
+        },
+        {
+          "id": "4cf3757d-f34d-4404-92c1-9f9694c54663",
+          "name": "Kotlin"
+        }
+      ],
+      "link": "https://github.com/Kahan-CS/RoadQuest-Group-18",
+      "demoLink": "",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "24d48231-d60a-4099-acff-48448caf1b0b",
+      "name": "LazyPrint",
+      "description": "Dynamic job scheduling system with advanced filter-based sorting algorithms, improving feature usability by 35%. Built with Python, Flask REST APIs, Pandas for scheduling analysis, and a ReactJS front end.",
+      "technology": [
+        {
+          "id": "055f8d37-4300-4a11-9bdb-9a863f43d15a",
+          "name": "Python"
+        },
+        {
+          "id": "159e614c-6aaa-4755-bc30-7053321a56fd",
+          "name": "Flask"
+        },
+        {
+          "id": "5a3ece71-f469-446d-86cc-ab0c6b487703",
+          "name": "Pandas"
+        },
+        {
+          "id": "e2a6c64d-eca3-490d-9ab2-87ecbf195a23",
+          "name": "React.js"
+        }
+      ],
+      "link": "https://github.com/Kahan-CS/CSCN72030-Group_2-LazyPrint",
+      "demoLink": "",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "524bcb99-5e80-42e3-87c0-c4470ccfccbf",
+      "name": "Savior In Darkness",
+      "description": "Interactive console-based demon-hero strategy game written entirely in C. Applies dynamic memory allocation, recursion, data structures, and file handling. Achieved 15% memory usage reduction. Full unit and integration testing via MS Testing Framework.",
+      "technology": [
+        {
+          "id": "1bcadfd7-d805-4ae8-9147-60b68a22bbd8",
+          "name": "C"
+        },
+        {
+          "id": "00e2360b-494a-49e5-b7ac-5f9eac94cbef",
+          "name": "MS Testing Framework"
+        }
+      ],
+      "link": "https://github.com/Kahan-CS/Savior_in_darkness",
+      "demoLink": "",
+      "featured": false,
+      "image": ""
+    }
+  ],
+  "experience": [
+    {
+      "id": "cf7a9d28-5569-46c9-8f13-61adbbee7c1d",
+      "title": "Software Developer (Core Product Eng.)",
+      "company": "Blackberry - QNX",
+      "companyUrl": "https://blackberry.qnx.com",
+      "location": "Ottawa, Ontario",
+      "dateRange": "Aug 2025 – Dec 2025",
+      "type": "CO-OP",
+      "skills": [
+        "C",
+        "C++",
+        "QNX",
+        "ISO 26262",
+        "MISRA"
+      ],
+      "highlights": [
+        "Developed a reference application in C independently to demonstrate utilities of an IPC-related services library for Alloy Kore (prev. Foundational Vehicle Software Platform).",
+        "Assisted in development of middleware components (C/C++) that handle encryption, storage, and performance-related functionalities.",
+        "Fixed several bugs dealing with memory safety, serial parsing, and bit-encoding, including 1 critical defect.",
+        "Added unit-tests in C achieving 95+% coverage on all existing components."
+      ],
+      "moreDetails": [
+        "Gained working knowledge of QMS processes, ISO 26262, MISRA, and software safety standards.",
+        "Performed system profiling on QNX targets using QCC for performance analysis of C/C++ applications."
+      ]
+    },
+    {
+      "id": "9235c1b4-064e-470e-9fd4-570be4c9dbbb",
+      "title": "Software Developer in Test",
+      "company": "Blackberry - QNX",
+      "companyUrl": "https://blackberry.qnx.com",
+      "location": "Ottawa, Ontario",
+      "dateRange": "May 2025 – Aug 2025",
+      "type": "CO-OP",
+      "skills": [
+        "TypeScript",
+        "Python",
+        "Mocha",
+        "GDB",
+        "VSCode Extensions"
+      ],
+      "highlights": [
+        "Worked with the IDE/Graphics/Audio/SWC team developing and testing QNX-specific tooling in the VSCode and Momentics IDEs within QNX Software Center.",
+        "Scaled automation test suites by 50% for IDE features and extensions using TypeScript-Mocha framework."
+      ],
+      "moreDetails": [
+        "Developed and maintained automation test suites in TypeScript and Python to test IDE features and extensions.",
+        "Enhanced and executed C/C++ debugger test workflows targeting QNX RTOS, validating GDB integration, breakpoint handling, and remote debugging capabilities across embedded targets."
+      ]
+    },
+    {
+      "id": "e-1781292308631",
+      "title": "Software Consultant",
+      "company": "SSP POS",
+      "companyUrl": "https://ssppos.com/",
+      "location": "Remote",
+      "dateRange": "Jan 2026 - Present",
+      "type": "Part-time",
+      "skills": [
+        "NextJS",
+        "Software Design",
+        "Full-stack",
+        "GraphQL"
+      ],
+      "highlights": [],
+      "moreDetails": [],
+      "skillsString": "NextJS, Software Design, Full-stack, GraphQL",
+      "highlightsText": "",
+      "moreText": ""
+    },
+    {
+      "id": "245c4be3-cc1d-4d85-9a9a-a8139f2d8453",
+      "title": "Lead Developer (Full Stack)",
+      "company": "Seneca Hackathon IT Team",
+      "companyUrl": "https://www.senecapolytechnic.ca",
+      "location": "Toronto, Ontario",
+      "dateRange": "Dec 2024 – Mar 2025",
+      "type": "Volunteer",
+      "skills": [
+        "NextJS",
+        "React",
+        "NodeJS",
+        "PostgreSQL",
+        "Supabase"
+      ],
+      "highlights": [
+        "Directed a cross-functional team of 5 developers, delivering a full-stack website for Seneca's 2024 Food Hackathon.",
+        "Developed the front-end using NextJS + React, NodeJS on server-side, with PostgreSQL database using Supabase."
+      ],
+      "moreDetails": [
+        "Designed and implemented software architecture as tech lead, making critical technology stack decisions to ensure scalability, maintainability, and alignment with product requirements.",
+        "Used serverless functions for scalability with toaster and zod for API validations."
+      ],
+      "skillsString": "NextJS, React, NodeJS, PostgreSQL, Supabase",
+      "highlightsText": "Directed a cross-functional team of 5 developers, delivering a full-stack website for Seneca's 2024 Food Hackathon.\nDeveloped the front-end using NextJS + React, NodeJS on server-side, with PostgreSQL database using Supabase.",
+      "moreText": "Designed and implemented software architecture as tech lead, making critical technology stack decisions to ensure scalability, maintainability, and alignment with product requirements.\nUsed serverless functions for scalability with toaster and zod for API validations."
+    },
+    {
+      "id": "2c91b936-0e92-4b60-bb7d-77c7e63e5a47",
+      "title": "Open Learning Assistant",
+      "company": "Conestoga College OER",
+      "companyUrl": "https://www.conestogac.on.ca",
+      "location": "Kitchener, Ontario",
+      "dateRange": "Jan 2025 – Apr 2025",
+      "type": "Part-time",
+      "skills": [
+        "Python",
+        "BeautifulSoup",
+        "Pandas",
+        "Matplotlib",
+        "Selenium"
+      ],
+      "highlights": [
+        "Developed Python-based ETL scripts using BeautifulSoup for web scraping and Pandas for data manipulation to automate resource collection tasks such as extracting glossary terms from books."
+      ],
+      "moreDetails": [
+        "Utilized Pressbooks and H5P, along with custom JavaScript utilities and data visualizations using Python's Matplotlib, to curate course content, assessments, and interactive lessons.",
+        "Conducted comprehensive testing of open learning web projects using automated tools like Selenium."
+      ]
+    },
+    {
+      "id": "0871ca87-de82-4537-bd7a-6a9898e9aa5a",
+      "title": "Web Master",
+      "company": "KW Chess Club",
+      "companyUrl": "https://kwchess.ca",
+      "location": "Kitchener, Ontario",
+      "dateRange": "Apr 2024 – Nov 2024",
+      "type": "Volunteer",
+      "skills": [
+        "WordPress",
+        "NodeJS",
+        "ReactJS",
+        "PostgreSQL",
+        "Hostinger"
+      ],
+      "highlights": [
+        "Optimized cloud services on Hostinger, reducing hosting costs by over 65% while ensuring scalability to handle traffic spikes.",
+        "Improved website usability and UI using WordPress plugins, reducing redundant inquiries by almost 90%."
+      ],
+      "moreDetails": [
+        "Developing full-stack website with membership, merchandise, and account management integrated, with automated services for notifications, updates, and scheduling.",
+        "Utilizing NodeJS for backend services and ReactJS for the UI, with database in PostgreSQL."
+      ]
+    },
+    {
+      "id": "87e0804c-ffb0-4292-b76f-f1abe1e804fd",
+      "title": "Software Developer",
+      "company": "UinSports Inc.",
+      "companyUrl": "https://uinsports.com",
+      "location": "Waterloo, Ontario",
+      "dateRange": "May 2023 – Aug 2024",
+      "type": "Contract",
+      "skills": [
+        "React Native",
+        "Python",
+        "Docker",
+        "AWS",
+        "Flask"
+      ],
+      "highlights": [
+        "Developed 8 reusable React Native components for the mobile app covering sports statistics and payment gateways."
+      ],
+      "moreDetails": [
+        "Contributed to back-end development using Python micro-services, deployed on Docker with AWS Cloud.",
+        "Added UI enhancements that improved user satisfaction and streamlined UX, increasing user retention by 25–30%.",
+        "Gained hands-on experience with AWS Cloud services, cost optimizations, and pipeline management."
+      ],
+      "skillsString": "React Native, Python, Docker, AWS, Flask",
+      "highlightsText": "Developed 8 reusable React Native components for the mobile app covering sports statistics and payment gateways.",
+      "moreText": "Contributed to back-end development using Python micro-services, deployed on Docker with AWS Cloud.\nAdded UI enhancements that improved user satisfaction and streamlined UX, increasing user retention by 25–30%.\nGained hands-on experience with AWS Cloud services, cost optimizations, and pipeline management."
+    }
+  ]
 }
