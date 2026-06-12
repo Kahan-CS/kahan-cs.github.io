@@ -133,6 +133,15 @@ const GeneralTab = ({ values, onChange }) => {
       </div>
 
       <div className={styles.formGroup}>
+        <label className={styles.label}>Transcript URL</label>
+        <input type="url" className={styles.input} value={values.transcriptUrl} onChange={set("transcriptUrl")}
+          placeholder="https://drive.google.com/file/d/... (leave blank to use bundled PDF)" />
+        <p className={styles.helpText}>
+          Google Drive share link or direct PDF URL. Leave empty to fall back to the transcript bundled in the repo (<code>src/assets/transcript.pdf</code>).
+        </p>
+      </div>
+
+      <div className={styles.formGroup}>
         <label className={styles.label}>Hero Status Line</label>
         <input type="text" className={styles.input} value={values.statusLine} onChange={set("statusLine")}
           placeholder="Seeking full-time entry-level software engineering positions" />
@@ -451,7 +460,7 @@ const stripNonSerializable = (projects) =>
 
 const EditScreen = ({ pat, githubUser, onLogout }) => {
   const [activeTab, setActiveTab] = useState("General");
-  const [general, setGeneral] = useState({ resumeUrl: "", statusLine: "", profilePicUrl: "", _picFile: null });
+  const [general, setGeneral] = useState({ resumeUrl: "", transcriptUrl: "", statusLine: "", profilePicUrl: "", _picFile: null });
   const [projects, setProjects] = useState([]);
   const [experience, setExperience] = useState([]);
   const [initialLoading, setInitialLoading] = useState(true);
@@ -476,6 +485,7 @@ const EditScreen = ({ pat, githubUser, onLogout }) => {
       }
       setGeneral({
         resumeUrl: config.resumeUrl || "",
+        transcriptUrl: config.transcriptUrl || "",
         statusLine: config.statusLine || "",
         profilePicUrl: config.profilePicUrl || "",
         _picFile: null,
@@ -514,6 +524,7 @@ const EditScreen = ({ pat, githubUser, onLogout }) => {
 
       const newConfig = {
         resumeUrl: general.resumeUrl,
+        transcriptUrl: general.transcriptUrl,
         statusLine: general.statusLine,
         profilePicUrl: finalProfilePicUrl,
         projects: stripNonSerializable(projects),

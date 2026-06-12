@@ -83,7 +83,7 @@ const NavBar = ({ zIndex = 4 }) => {
             </li>
 
             <NavBarLink name="Contact" link="#contact-me" button="no" />
-            <NavBarLink name="Transcript" link={transcript} button="yes" target="_blank" />
+            <NavBarLink name="Transcript" link={config.transcriptUrl || transcript} button="yes" target="_blank" />
             <NavBarLink
               name="Resume"
               link={config.resumeUrl}

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 const DEFAULT_CONFIG = {
   resumeUrl:
     "https://drive.google.com/file/d/1tAzIWzmdcmUm1y7ESBGBtjT6WyW-hmyS/view?usp=sharing",
+  transcriptUrl: "",
   profilePicUrl: "",
   statusLine: "Seeking full-time entry-level software engineering positions",
 };

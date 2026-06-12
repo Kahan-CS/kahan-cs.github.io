@@ -125,6 +125,16 @@ Here is exactly where each field lives and how it moves:
 
 ---
 
+### Transcript URL
+
+| Stage | Detail |
+|-------|--------|
+| **Saved to** | `config.json` → `transcriptUrl` on gh-pages |
+| **Read by** | `usePortfolioConfig` → `NavBar.js` — if `transcriptUrl` is set, it's used as the Transcript button `href`; if blank, falls back to the bundled `src/assets/transcript.pdf` |
+| **On deploy** | travels through config.json sync — same as resume URL |
+
+---
+
 ### Hero Status Line
 
 | Stage | Detail |
