@@ -16,7 +16,9 @@ function resolveImgUrl(url) {
 
 const AboutMe = () => {
   const config = usePortfolioConfig();
-  const [imgSrc, setImgSrc] = useState(`${process.env.PUBLIC_URL}/profile-pic.jpg`);
+  const [imgSrc, setImgSrc] = useState(
+    `${process.env.PUBLIC_URL}/profile-pic.jpg`,
+  );
 
   useEffect(() => {
     const resolved = resolveImgUrl(config.profilePicUrl);
@@ -33,18 +35,24 @@ const AboutMe = () => {
       <div className={`row ${styles["inner-content"]}`}>
         <div className="col">
           <p>
-            Hello there! My name is Kahan Desai — a Computer Science (Honours)
-            graduate from Conestoga College, Waterloo ON.
-            Full-Stack Developer | Back-end Engineer | Data Scientist / ML Engineer
+            I am a final year Computer Science student majoring in ML/AI,
+            <b> graduating in August 2026</b>. I am interested in Full-Stack, Systems
+            Engineering, Data Science, and ML/AI roles.{" "}
+          </p>
+          <p></p>
+          <p>
+            I've gained experience in developing systems components, debugging
+            complex and multi-threaded programs, implementing ML models and
+            problem-solving algorithms, and the various full-stack software
+            projects that I worked on all throughout my degree program and co-op
+            terms. Translating ideas into software applications fascinates me.{" "}
+            <b>Innovation and Problem-solving</b> are my biggest driving forces.
           </p>
           <p>
-            Coming into my Bachelor's I had hardly any programming background — just
-            strong foundations in Math, Physics, and Chemistry, and years of
-            competitive problem-solving. That curious mind led me to translate logical
-            skills into real software: from embedded C systems at Blackberry QNX, to
-            full-stack web apps, to machine learning pipelines. I care about building
-            things that actually work well, and I enjoy the challenge of making complex
-            systems simple and reliable.
+            Passionate about problem-solving, mathematics, competitive
+            programming. I lean towards Machine learning and Algorithmic
+            problems. I also love to learn about and work on Embedded
+            Systems, Parallel Computing problems, Performance & Optimization.
           </p>
           <p className={styles["technology-message"]}>
             Recent technologies I've been working with:
@@ -56,7 +64,11 @@ const AboutMe = () => {
                   <TechnologyList
                     key={techName.id}
                     name={techName.name}
-                    iconName={techName.hasOwnProperty("iconName") ? techName.iconName : ""}
+                    iconName={
+                      techName.hasOwnProperty("iconName")
+                        ? techName.iconName
+                        : ""
+                    }
                   />
                 ))}
               </ul>

@@ -32,7 +32,6 @@ const IntroAboutMe = () => {
 
           <div className="col">
             <p className={styles["big-fact"]}>
-              I am a Computer Science graduate (Conestoga College, Waterloo ON).{" "}
               {config.statusLine}
             </p>
           </div>
